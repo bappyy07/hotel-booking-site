@@ -1,0 +1,660 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Inter", sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*heading-sec*/
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/Image\ \(1\).png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+    margin-top: px;
+}
+nav{
+    padding-top: 40px;
+}
+.nav{
+    display: flex;
+    width: 80%;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    background-color: #ffffff;
+    z-index: 100;
+    padding: 3rem;
+    border-radius: 18px;
+    
+    & a{
+        text-decoration: none;
+        color: #000000;
+        font-size: 2rem;
+        font-weight: 400;
+        transition: background-color 0.3s;
+
+    }
+    .sky{
+        color: #65aef2;
+    }
+    & a:hover{
+        background-color: #a3a8a9;
+    }
+    .sky:hover{
+        color: #a3a8a9;
+        background-color: #65aef2;
+    }
+    & img{
+        height: 75px;
+    }
+}
+h1{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 400px;
+    font-size: 90px;
+    color: #ffffff;
+}
+
+/*booking-form*/
+
+.room-book{
+    background-color: #ffffff;
+    width: 100%;
+    height: 400px;
+    position:relative;
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 5rem;
+}
+.form{
+    position: relative;
+    width: 80%;
+    height: 300px;
+    margin: 0 auto;
+    /* margin-top: 80px; */
+    background-color: #e9f3f6;
+    align-items: flex-start;
+    justify-content: center;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 100px;
+    display: grid;
+    z-index: 1; 
+    
+}
+.form-head{
+    display: block;
+    align-items: center;
+    margin-left: 400px;
+
+    & h2{
+        font-size: 25px;
+        font-weight: 500;
+    }
+    & p{
+        color: #a3a8a9;
+    }
+}
+.form-menu{
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    gap: 10rem;
+    margin-top: 30px;
+
+    .date{
+        display: grid;
+        
+
+        & p{
+            font-weight: 600;
+        }
+        & button{
+            background-color: #ffffff;
+            margin-top: 20px;
+            padding: 0.3rem 2rem;
+            border: none;
+            border-radius: 5px;
+            display: flex;
+            gap: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+
+            & p{
+                margin-top: 5px;
+            }
+        }
+        & button:hover{
+            background-color: #a3a8a9;
+        }
+    }
+}
+.person{
+    display: grid;
+    cursor: pointer;
+
+    & p{
+        font-weight: 600;
+    }
+    .container{
+        display: flex;
+        background-color: #ffffff;
+        margin-top: 20px;
+        padding: 0.5rem 2rem;
+        border: none;
+        gap: 2rem;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+
+
+        .bor{
+            border: none;
+        }
+    }
+    .container:hover{
+        background-color: #a3a8a9;
+    }
+}
+.btn{
+    margin-top: 30px;
+}
+.btn button{
+        background-color: #65aef2;
+        padding: 1rem 2rem;
+        color: #ffffff;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+    }
+    .btn button:hover{
+        background-color: #4695df;
+    }
+
+/*room-sec*/
+
+.room-menu{
+    width: 100%;
+    height: 100vh;
+    background-color: #f3f3f3;
+    margin: 0 auto;
+    padding: 3rem;
+    
+}
+.room-div{
+    width: 80%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: space-between;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.rooms:hover{
+    transform: translateY(-5px);
+}
+.services{
+    margin-top: 30px;
+}
+.wedding{
+    margin-top: 30px;
+}
+.dining:hover{
+    transform: translateY(-5px);
+}
+.services:hover{
+    transform: translateY(-5px);
+}
+.conferences:hover{
+    transform: translateY(-5px);
+}
+.wedding:hover{
+    transform: translateY(-5px);
+}
+
+/*offer-sec*/
+
+.offer{
+    width: 100%;
+    margin: 0 auto;
+    padding: 4rem;
+    background-color: #efefef;
+}
+.offer-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+.offer-month{
+    padding: 0;
+    width: 65%;
+
+    & h5{
+        font-size: 3rem;
+        color: #65aef2;
+        font-weight: 400;
+        padding-bottom: 1rem;
+    }
+    & h2{
+        font-size: 5rem;
+        font-weight: 500;
+        margin-bottom: 1rem;
+    }
+    & p{
+        font-size: 2rem;
+        font-weight: 400;
+    }
+}
+.view-btn{
+    margin-bottom: 10px;
+    padding: 2rem;
+
+    & button{
+        font-size: 2.5rem;
+        font-weight: 600;
+        border: none;
+        color: #65aef2;
+        cursor: pointer;
+    }
+    & button:hover{
+        background-color: #a3a8a9;
+        color: #1679d5;
+        
+    }
+}
+
+.price-sec{
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    padding: 3rem;
+    background-color: #efefef;
+    align-items: center;
+    justify-content: space-around;
+    gap: 3rem;
+
+    .honeymoon{
+        align-items: center;
+        background-color: #ffffff;
+        box-shadow: rgb(237, 231, 233, 0.5);
+        border-radius: 30px;
+        
+        & img{
+            padding: 3rem 1rem;
+            margin-left: 60px;
+        }
+        .description{
+            padding-inline: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+
+            .honey{
+                margin-left: 50px;
+
+                & p{
+                    color: #8f8f8f;
+                    
+                }
+                & h3{
+                    font-size: 2rem;
+                    
+                }
+                & p{
+                    color: #5d5d5d;
+                }
+            }
+        }
+
+    }
+}
+.honeymoon:hover{
+    transform: translateY(-5px);
+}
+.logoman{
+    display: flex;
+    align-items: center;
+    
+
+}
+.price-per{
+    margin: 0 auto;
+    padding: 1rem;
+    align-items: center;
+    margin-left: 200px;
+    display: flex;
+    gap: 1rem;
+
+    & h2{
+        font-size: 2rem;
+        font-weight: 600;
+    }
+}
+
+/*footer*/
+
+footer{
+    width: 100%;
+    height: 600px;
+    padding: 0;
+    background-color: #000000;
+    
+
+
+    & img{
+        margin-top: 50px;
+        z-index: 3;
+        background-color: #000000;
+        margin-left: 1500px;
+    }
+    
+}
+.foot-cap{
+    max-width: 600px;
+    padding: 0;
+    text-align: center;
+    margin-left: 60px;
+    display: flex;
+    
+    .foot-btn{
+        margin-left: 20px;
+        margin-top: 40px;
+        
+
+        & h3{
+            color: #ffffff;
+            font-size: 40px;
+            font-weight: 500;
+        }
+        .sub-form{
+            display: flex;
+            gap: -15px;
+        }
+        .email-inp{
+            width: 420px;
+            height: 60px;
+            font-size: 20px;
+            padding: 0 2rem;
+            margin-top: 10px;
+            border: none;
+            border-radius: 10px;
+        }
+        .subs-btn{
+            width: 100px;
+            height: 60px;
+            margin-top: 10px;
+            background-color: #65aef2;
+            margin-right: 10px;
+            
+        }
+    }
+}
+.foot-term{
+    display: flex;
+    justify-content: space-around;
+    /* gap: 2rem; */
+    align-items: center;
+    margin: 0 auto;
+    
+
+    .about{
+        width: 200px;
+        display: grid;
+        margin-left: 200px;
+        padding: 3rem;
+        grid-gap: 20px;
+        
+        & a{
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 20px;
+        }
+    }
+    
+}
+.copyright{
+    width: 600px;
+    align-items: center;
+    margin: 0 auto;
+    border-top: 1px solid #8f8f8f;
+}
+.copy{
+    width: 400px;
+    color: #a3a8a9;
+    margin-left: 150px;
+    align-items: center;
+    margin-top: 40px;
+    
+
+}
+
+/*responsive for mobile*/
+
+@media (max-width:480px){
+    .hero{
+        width: 100%;
+    }
+    .nav a{
+        display: none;
+        align-items: center;
+
+    }
+    & h1{
+        font-size: 35px;
+        font-weight: 500;
+    }
+
+   /*booking-form*/
+    .room-book{
+        width: 400px;
+        height: 100vh;
+        padding: 0;
+        display: grid;
+        top: 0;
+
+    }
+    .form{
+        width: 400px;
+        height: 90vh;
+        display: grid;
+        margin-left: 20px;
+       
+    }
+    .form-head{
+        display: grid;
+        margin: 0;
+        padding: 0;
+        height: 50px;
+    }
+    .form-menu{
+        display: grid;
+
+        .date button{
+            width: 300px;
+            padding: 1rem;
+            font-size: 20px;
+            
+        }
+    }
+    .person{
+        display: grid;
+        padding: 1rem;
+        margin-bottom: 200px;
+        
+        & container{
+            position: relative;
+        }
+    }
+    .btn{
+        
+    }
+
+
+    /*room-sec*/
+
+    .room-menu{
+        width: 100%;
+        height: 230vh;
+        padding: 1rem;
+        margin-bottom: 200px;
+       
+    }
+    .room-div{
+        width: 360px;
+        max-height: fit-content;
+        display: grid;
+        flex-direction: column;
+        grid-gap: 1rem;
+
+        .rooms{
+            
+        }
+        .room2{
+            margin-bottom: ;: 200px;
+        }
+        .room3{
+            margin-bottom: 200px;
+        }
+        .rooms img{
+            width: 90%;
+        }
+        .room2 img{
+            width: 90%;
+        }
+        .room3 img{
+            width: 90%;
+        }
+    }
+    /*offer-sec*/
+    
+    .offer{
+        width: 100%;
+        padding: 0;
+        display: grid;
+
+    }
+    .offer-head{
+        display: grid;
+        width: 300px;
+        margin-left: 35px;margin-top: 20px;
+    }
+
+    .offer-month{
+        display: grid;
+        margin-right: 100px;
+        width: 90%;
+    }
+    .offer-month h2{
+        font-size: 55px;
+    }
+    .offer-month p{
+        font-size: 30px;
+    }
+    .view-btn{
+        display: none;
+    }
+
+    .price-sec{
+        display: grid;
+        margin: 0;
+        padding: 1.5rem;
+        
+
+        .honeymoon{
+            width: 300px;
+            align-items: center;
+            justify-content: center;
+            margin-right: 100px;
+            height: 500px;
+
+            & img{
+                width: 280px;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto;
+                margin-left: 10px;
+            }
+            .description{
+                margin: 0 auto; 
+                width: 280px;      
+
+                .honey{
+                   display: none;
+                }
+                .logoman{
+                    display: none;
+                }
+                
+            }
+            .price-per{
+                margin: 0 auto;
+                margin-left: 80px;
+                
+            }
+        }
+    }
+    /*footer*/
+    footer{
+    display: grid;
+    max-width: 100%;
+    height: 600px;
+    align-items: center;
+    
+    & img{
+        margin: 0 2rem;
+    }
+    
+    }
+    .foot-cap{
+    width: 300px;
+    margin: 0 ;
+
+    .foot-btn{
+        margin: 0;
+
+        & h3{
+            font-size: 30px;
+            
+        }
+        .sub-form{
+            display: grid;
+            margin-left: 30px;
+        }
+        .email-inp{
+            width: 300px;
+        }
+    }
+   }
+   .foot-term{
+    display: none;
+   }
+   .copyright{
+    width: 100%;
+    align-items: center;
+    margin: 0 auto;
+   } 
+   .copy{
+    width: 350px;
+    margin: 0 auto;
+    margin-left: 30px;
+   }
+}
